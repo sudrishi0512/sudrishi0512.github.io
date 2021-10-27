@@ -16,32 +16,32 @@
 <body >
   <audio controls="controls" id='applause' src="applause-01.mp3" type="audio/mp3"></audio>
   <div class="container-fluid main_container" style="height: 100%;" >
-    <div class="row row-lg-2" style="height: 10%;">
-      <div class="col-lg-4">
+    <div class="row" style="height:10%;">
+      <div class="col-lg-4" style="height:100%;">
         <img src="logo-dark.png" class="img-rounded" style="height: 100px;width: 100px;" alt="Cinque Terre">
       </div>
-      <div class="col-lg-4" style="text-align:center;">
+      <div class="col-lg-4" style="text-align:center;height:100%;">
         <h1 style="font-family:sans-serif;font-weight: bold;color: black;">Lottery Winners</h1>
       </div>
-      <div class="col-lg-4"></div>
+      <div class="col-lg-4" style="height:100%;"></div>
     </div>
-    <div class="row row-lg-8" style="height: 60%;" >    
-      <div class="col-lg-4">
-        <h3 style="font-family:sans-serif;font-weight: bold;color: black;visibility: hidden;" id="winner_banner">Winners are :</h3>
+    <div class="row" style="height:60%;">    
+      <div class="col-lg-4" style="height:100%;">
+        <h3 style="font-family:sans-serif;font-weight: bold;color: black;visibility: hidden;" id="winner_banner"><br><br>Winners are :</h3>
         <ul id="winner_list" style="visibility: hidden;"> </ul>
       </div>
-      <div class="col-lg-4 text-center" style="height: 60%;padding-top: 7%;" >
+      <div class="col-lg-4 text-center" style="height:100%;padding-top: 7%;" >
         <img src="congrats.jpg" class="img-rounded" id="congrats" style="width:100%;visibility: hidden;display: none;">
         <p id="lotter_number"  class="odometer odometer-inside" style="color:blue;text-align:center;visibility: hidden;"></p>
       </div>
-      <div class="col-lg-4" ></div>
+      <div class="col-lg-4" style="height:100%;"></div>
     </div>
-    <div class="row row-lg-2" style="height: 30%;">
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4 text-center" >
+    <div class="row" style="height:30%;">
+      <div class="col-lg-4" style="height:100%;"></div>
+      <div class="col-lg-4 text-center" style="height:100%;" >
         <button type="button" id= "next" class="btn btn-success btn-lg btn-block glyphicon glyphicon-play" role="button" style="text-align:center;" onclick="get_next_winner()"></button>
       </div>
-      <div class="col-lg-4"></div>
+      <div class="col-lg-4" style="height:100%;"></div>
     </div>
   </div>
 
