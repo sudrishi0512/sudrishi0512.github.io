@@ -33,6 +33,9 @@ function get_next_winner()
         applause.currentTime = 0;
         rolling.pause();
         rolling.currentTime = 0;
+        congratulations.pause();
+        congratulations.currentTime = 0
+        congratulations.play();
     }
     else
     {
