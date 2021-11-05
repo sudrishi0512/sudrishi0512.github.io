@@ -29,12 +29,18 @@ function get_next_winner()
         document.getElementById('congrats').style.display = 'initial';
         document.getElementById('winner_banner').style.visibility = 'visible';
         document.getElementById('winner_list').style.visibility = 'visible';
+        applause.pause();
+        applause.currentTime = 0;
+        rolling.pause();
+        rolling.currentTime = 0;
     }
     else
     {
         applause.pause();
         applause.currentTime = 0;
-        applause.play();
+        rolling.pause();
+        rolling.currentTime = 0;
+        rolling.play();
         document.getElementById('lotter_number').style.visibility = 'visible';
         winner=arr.pop();
         setTimeout(function(){

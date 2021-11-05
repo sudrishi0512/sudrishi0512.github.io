@@ -252,6 +252,11 @@
           setTimeout(function() {
             _this.render();
             renderEnqueued = false;
+            rolling.pause();
+            rolling.currentTime = 0;
+            applause.pause();
+            applause.currentTime = 0;
+            applause.play();
             return trigger(_this.el, 'odometerdone');
           }, 0);
           return true;
@@ -534,13 +539,16 @@
         oldValue = Math.round(oldValue * Math.pow(10, fractionalCount));
       }
       if (!(diff = newValue - oldValue)) {
+        
         return;
       }
+      console.log("aaaaabbb")
       this.bindTransitionEnd();
       minIntegerLen = (_ref = this.options.minIntegerLen) != null ? _ref : MIN_INTEGER_LEN;
       digitCount = Math.max(this.getDigitCount(oldValue, newValue), minIntegerLen + fractionalCount);
       digits = [];
       boosted = 0;
+      
       for (i = _i = 0; 0 <= digitCount ? _i < digitCount : _i > digitCount; i = 0 <= digitCount ? ++_i : --_i) {
         start = truncate(oldValue / Math.pow(10, digitCount - i - 1));
         end = truncate(newValue / Math.pow(10, digitCount - i - 1));
@@ -560,7 +568,8 @@
         } else {
           frames = (function() {
             _results = [];
-            for (var _j = start; start <= end ? _j <= end : _j >= end; start <= end ? _j++ : _j--){ _results.push(_j); }
+            for (var _j = start; start <= end ? _j <= end : _j >= end; start <= end ? _j++ : _j--){ 
+              _results.push(_j); }
             return _results;
           }).apply(this);
         }
@@ -623,6 +632,7 @@
       _results = [];
       for (k in _ref1) {
         v = _ref1[k];
+
         _results.push((_base = Odometer.options)[k] != null ? (_base = Odometer.options)[k] : _base[k] = v);
       }
       return _results;

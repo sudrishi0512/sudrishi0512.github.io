@@ -1,4 +1,16 @@
 audio {
   display: none;
 }
-body {background-color: yellowgreen;}
+body {
+  background-image: url('imc_bg.jpeg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+li{
+  line-height:1.5em;
+  float:left;
+  
+}
+
+#winner_list li  { width:50%;}

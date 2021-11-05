@@ -51,11 +51,11 @@
   position: absolute;
 }
 .odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-car.odometer-animating-up .odometer-ribbon-inner {
-  -webkit-transition: -webkit-transform 2s;
-  -moz-transition: -moz-transform 2s;
-  -ms-transition: -ms-transform 2s;
-  -o-transition: -o-transform 2s;
-  transition: transform 2s;
+  -webkit-transition: -webkit-transform 6s;
+  -moz-transition: -moz-transform 6s;
+  -ms-transition: -ms-transform 6s;
+  -o-transition: -o-transform 6s;
+  transition: transform 6s;
 }
 .odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-car.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
   -webkit-transform: translateY(-100%);
@@ -72,11 +72,11 @@
   transform: translateY(-100%);
 }
 .odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-car.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
-  -webkit-transition: -webkit-transform 2s;
-  -moz-transition: -moz-transform 2s;
-  -ms-transition: -ms-transform 2s;
-  -o-transition: -o-transform 2s;
-  transition: transform 2s;
+  -webkit-transition: -webkit-transform 6s;
+  -moz-transition: -moz-transform 6s;
+  -ms-transition: -ms-transform 6s;
+  -o-transition: -o-transform 6s;
+  transition: transform 6s;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -90,8 +90,8 @@
   border-radius: 0.34em;
   font-family: "Arimo", monospace;
   padding: 0.15em;
-  background: #000;
-  color: #eee0d3;
+  background: #eea241;
+  color: #eed8d3;
 }
 .odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-car .odometer-digit {
   -moz-box-shadow: inset 0 0 0.3em rgba(0, 0, 0, 0.8);
