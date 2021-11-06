@@ -22,6 +22,11 @@ function get_next_winner()
 {
     if(arr.length == 0)
     {
+        var winner_list = document.getElementById("winner_list");
+        var i = winner_list.childNodes.length;
+        while (i--)
+            winner_list.appendChild(winner_list.childNodes[i]);
+
         document.getElementById('next').style.visibility = 'hidden';
         document.getElementById('lotter_number').style.visibility = 'hidden';
         document.getElementById('lotter_number').style.display = 'none';
