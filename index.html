@@ -43,7 +43,31 @@
     <div class="row" style="height:30%;">
       <div class="col-lg-4" style="height:100%;"></div>
       <div class="col-lg-4 text-center" style="height:100%;" >
+        <button type="button" id= "addToList" class="btn btn-success btn-lg btn-block glyphicon glyphicon-plus" role="button" style="text-align:center;visibility: hidden;display: none;" data-toggle="modal" data-target="#success_tic" onclick="add_to_winner()"></button>
         <button type="button" id= "next" class="btn btn-success btn-lg btn-block glyphicon glyphicon-play" role="button" style="text-align:center;" onclick="get_next_winner()"></button>
+        <!-- Modal -->
+        <div id="success_tic" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <a class="close" href="#" data-dismiss="modal">&times;</a>
+              <div class="page-body">
+            <div class="head">  
+              <h3 style="margin-top:5px;">Congratulations</h3>
+              <h4>to the lucky winner !!!</h4>
+            </div>
+
+          <h1 style="text-align:center;"><div class="checkmark-circle">
+          <div class="background"></div>
+          <div class="checkmark draw"></div>
+        </div><h1>
+
+          </div>
+        </div>
+            </div>
+
+  </div>
       </div>
       <div class="col-lg-4" style="height:100%;"></div>
     </div>

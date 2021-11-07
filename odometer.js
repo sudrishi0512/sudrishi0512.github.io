@@ -256,7 +256,6 @@
             rolling.currentTime = 0;
             applause.pause();
             applause.currentTime = 0;
-            applause.play();
             return trigger(_this.el, 'odometerdone');
           }, 0);
           return true;
@@ -542,7 +541,7 @@
         
         return;
       }
-      console.log("aaaaabbb")
+      
       this.bindTransitionEnd();
       minIntegerLen = (_ref = this.options.minIntegerLen) != null ? _ref : MIN_INTEGER_LEN;
       digitCount = Math.max(this.getDigitCount(oldValue, newValue), minIntegerLen + fractionalCount);
